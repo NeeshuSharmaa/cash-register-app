@@ -15,7 +15,7 @@ checkButton.addEventListener("click",function validateBillAndCashAmount(){
             calculateChange(amountToBeReturned); 
         }
         else {
-           showMessage("Do you wanna wash plates?") 
+           showMessage("Do you wanna wash plates? 🤨") 
         }
     }
     else {
