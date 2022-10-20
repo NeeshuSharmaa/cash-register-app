@@ -9,5 +9,5 @@ It is an app that can help the user by telling how s/he can return the change to
 ## Preview
 ![Screenshot (3)](https://user-images.githubusercontent.com/114111237/197045205-223a10b8-67a3-41c1-8063-51d4451193e2.png)
 
-## Languges Used
+## Languages Used
 `HTML` `CSS` `JavaScript`
