@@ -7,20 +7,27 @@ const noOfNotes =document.querySelectorAll(".no-of-notes");
 availableNotes =[2000,500,100,50,10,5,1];
 
 checkButton.addEventListener("click",function validateBillAndCashAmount(){
-    
-    if (billAmount.value>0){
-        hideMessage();
-        if (cashGiven.value >= billAmount.value){
-            const amountToBeReturned = cashGiven.value - billAmount.value;
-            calculateChange(amountToBeReturned); 
+    billA=billAmount.value;
+    cashG=cashGiven.value;
+    if(billA && cashG){
+        if (billA>0){
+            hideMessage();
+            if (cashG >= billA){
+                const amountToBeReturned = cashG- billA;
+                calculateChange(amountToBeReturned); 
+            }
+            else {
+               showMessage("Do you wanna wash plates? →_→") 
+            }
         }
         else {
-           showMessage("Do you wanna wash plates? 🤨") 
+            showMessage("Invalid Bill Amount")   
         }
+
     }
-    else {
-        showMessage("Invalid Bill Amount")   
-    }
+    else{
+        showMessage("Please input both the values!!")
+    }   
 });
 function calculateChange(amountToBeReturned){
     for (let i=0; i<availableNotes.length; i++) {
