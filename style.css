@@ -7,24 +7,33 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    padding:1rem;
+    padding:2rem;
     box-sizing:border-box;
     height:100vh;
     background-color:#6b21a8;
 }
 
 .main-content{
-    margin:2rem;
-    padding:1rem;
+    padding:1rem 0.5rem 1rem 0.5rem;
     background-color: #f8fafc;
     border-radius:1rem;
     width:70%;
-    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width:50vw;
 
 }
 h1{
     color: #6b21a8;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.description{
+    margin:1rem 1rem 1.5rem 1rem;
+
 }
 input{
     padding:0.5rem;
@@ -41,17 +50,6 @@ input:focus{
     outline: none !important;
     border-color: #6b21a8;
     box-shadow: 0 0 6px #6b21a8;
-}
-
-
-
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width:50vw;
-
 }
 
 #check-button{
