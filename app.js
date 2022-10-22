@@ -3,9 +3,8 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message")
 const noOfNotes =document.querySelectorAll(".no-of-notes");
-const table =document.querySelector("#.table");
 
-availableNotes =[2000,500,100,50,10,5,1];
+const availableNotes =[2000,500,100,50,10,5,1];
 
 checkButton.addEventListener("click",function validateBillAndCashAmount(){
     billA=billAmount.value;
